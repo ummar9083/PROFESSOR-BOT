@@ -1,138 +1,193 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗧𝗛𝗜𝗦+𝗜𝗦+𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑+𝐁𝐎𝐓!;𝗖𝗕𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗠𝗞𝗡+𝗕𝗢𝗧𝗭™;𝗔+𝗣𝗢𝗪𝗘𝗥𝗙𝗨𝗟𝗟+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
-<p align="center">
+# VideoScroll - TikTok-like Short Video Platform
 
-<h1 align="center">
-  <b> 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑 𝐁𝐎𝐓</b>
-</h1>
+A modern, responsive short video scrolling platform built with HTML, CSS, and JavaScript that mimics TikTok's user interface and functionality.
 
-[![Stars](https://img.shields.io/github/stars/MrMKN/PROFESSOR-BOT?style=flat-square&color=yellow)](https://github.com/MrMKN/PROFESSOR-BOT/stargazers)
-[![Forks](https://img.shields.io/github/forks/MrMKN/PROFESSOR-BOT?style=flat-square&color=orange)](https://github.com/MrMKN/PROFESSOR-BOT/fork)
-[![Size](https://img.shields.io/github/repo-size/MrMKN/PROFESSOR-BOT?style=flat-square&color=green)](https://github.com/MrMKN/PROFESSOR-BOT)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrMKN/PROFESSOR-BOT)   
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/MrMKN/PROFESSOR-BOT/blob/main/LICENSE)
+## 🚀 Features
 
-[![Sparkline](https://stars.medv.io/MrMKN/PROFESSOR-BOT.svg)](https://stars.medv.io/MrMKN/PROFESSOR-BOT)
+### 📱 Core Functionality
+- **Vertical Video Scrolling**: Smooth scroll-snap navigation between videos
+- **Auto-play/Pause**: Videos automatically play when in view and pause when scrolled away
+- **Touch & Gesture Support**: Full mobile touch support with swipe gestures
+- **Keyboard Controls**: Arrow keys for navigation, spacebar for play/pause
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 
-<details>
-<summary><b>Features</b></summary>
+### 🎯 User Interface
+- **Modern Dark Theme**: TikTok-inspired dark interface with gradient accents
+- **Navigation Bar**: Search functionality, upload button, and profile access
+- **Side Navigation**: Quick access to For You, Following, Trending, and Music sections
+- **Video Overlay**: User information, descriptions, and music details
+- **Action Buttons**: Like, comment, share, and bookmark functionality
 
-- [x] Auto Filter
-- [x] Manual Filter
-- [x] IMDB
-- [x] Admin Commands
-- [x] Broadcast
-- [x] Index
-- [x] IMDB Search
-- [x] Inline Search
-- [x] Random Pics
-- [x] Ids And User Info
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
-- [x] Spelling Check Feature
-- [x] Custom File Caption
-- [x] Group Broadcast 
-- [x] AutoFilter Auto Delete
-- [x] Junk Group & Users Clearing On Database
-- [x] Global Filter
-- [x] Url Shortner In Autofilter
-- [x] Custom Button Lock
-- [x] Image Editor & Background Remover
-- [x] Telegraph, Pin, Json, Password Generator
-- [x] Ban, Mute, Unmute, Etc... Group Manager
-- [x] Custom Welcome Message
-- [x] Advanced Admin Panel
-- [x] Photo Changing In All Buttons
-- [x] Custom Start Message
-- [x] Custom Button Alter Message
-- [x] Advanced Status (Disk, Cpu, Ram, Uptime..) In Image Type
-</details>
+### 🎮 Interactive Controls
+- **Video Controls**: Play/pause, progress bar, and volume toggle
+- **Like System**: Animated heart reactions with count updates
+- **Share Functionality**: Native Web Share API with clipboard fallback
+- **Bookmark Feature**: Save videos for later viewing
+- **Comments System**: Simulated comment viewing functionality
 
-<details>
-<summary><b>Variables</b></summary>
-  
-### Required Variables
-* `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-* `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
-* `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URL`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
-* `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `SUPPORT_CHAT` : Username of a Support Group / ADMIN. ( Should be username without @ and not ID
-  
-### Optional Variables
-* `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
-* `USE_CAPTION_FILTER` : Whether bot should use captions to improve search results. (True False)
-* `CUSTOM_FILE_CAPTION` : A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding
-* `CACHE_TIME` : The maximum amount of time in seconds that the result of the inline query may be cached on the server
-* `IMDB` : Imdb, the view of information when making True/False
-* `SINGLE_BUTTON` : choose b/w single or double buttons 
-* `P_TTI_SHOW_OFF` : Customize Result Buttons to Callback or Url by (True = url / False = callback)
-### Url Shortner Variable
-* `SHORT_URL` : Url Of Shortner Site You Use
-* `SHORT_API` : Api Key Of Shortner Which You Use
-</details>
+### 🎨 Visual Effects
+- **Smooth Animations**: Hover effects, transitions, and micro-interactions
+- **Loading States**: Skeleton loading animation for better UX
+- **Custom Scrollbar**: Styled scrollbar for desktop users
+- **Backdrop Blur**: Modern glass-morphism effects
+- **Gradient Branding**: Eye-catching logo and accent colors
 
-<details>
-<summary><b>Deploy to Heroku</b></summary>
+## 🛠️ Technologies Used
 
-<a href="https://youtu.be/uv0WHxwHwfo"><img src="https://img.shields.io/badge/watch%20Heroku%20Tutorial-red.svg?logo=Youtube"></a>                
+- **HTML5**: Semantic structure and video elements
+- **CSS3**: Modern styling with flexbox, grid, animations, and custom properties
+- **JavaScript ES6+**: Class-based architecture with modern features
+- **Font Awesome**: Icon library for UI elements
+- **Web APIs**: Intersection Observer, Web Share API, Clipboard API
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/PROFESSOR-BOT)
-</details>
-
-<details>
-<summary><b>Deploy to Koyeb</b></summary>
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/MrMKN/PROFESSOR-BOT&env[WEBHOOK]=True&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[MAX_RIST_BTNS]=10&env[CUSTOM_FILE_CAPTION]&env[DATABASE_URL]&env[DATABASE_NAME]=MknBotz&env[COLLECTION_NAME]=Telegram_files&env[SUPPORT_CHAT]&env[IMDB]=True&env[PM_IMDB]=True&env[IMDB_TEMPLATE]&env[IMDB_DELET_TIME]=900&env[SINGLE_BUTTON]=True&env[PMFILTER]=True&env[G_FILTER]=True&env[BUTTON_LOCK]=True&env[P_TTI_SHOW_OFF]=True&run_command=python%20bot.py&branch=main&name=mr-rofessor)              
-</details>
-
-<details>
-<summary><b>Basic Commands</b></summary>
+## 📁 File Structure
 
 ```
-start - check bot alive
-settings - get settings 
-logs - to get the rescent errors
-stats - to get status of files in db.
-filter - add manual filters
-filters - view filters
-connect - connect to PM.
-disconnect - disconnect from PM
-connections - check all connections
-del - delete a filter
-delall - delete all filters
-deleteall - delete all index(autofilter)
-delete - delete a specific file from index.
-info - get user info
-id - get tg ids.
-imdb - fetch info from imdb.
-users - to get list of my users and ids.
-chats - to get list of the my chats and ids 
-leave  - to leave from a chat.
-disable  -  do disable a chat.
-enable - re-enable chat.
-ban_user  - to ban a user.
-unban_user  - to unban a user.
-channel - to get list of total connected channels
-broadcast - to broadcast a message to all Eva Maria users
+📦 VideoScroll
+├── 📄 index.html          # Main HTML structure
+├── 📄 styles.css          # CSS styling and animations
+├── 📄 script.js           # JavaScript functionality
+└── 📄 README.md          # Documentation
 ```
 
-</details>
+## 🚀 Getting Started
 
-## TELAGRAM SUPPORT 
+1. **Clone or Download** the project files
+2. **Open `index.html`** in a modern web browser
+3. **Start Exploring** the video feed immediately!
 
-* [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
+### Browser Requirements
+- **Modern Browser**: Chrome 88+, Firefox 85+, Safari 14+, Edge 88+
+- **JavaScript Enabled**: Required for full functionality
+- **Internet Connection**: Needed for video content and icons
 
-## Credit 💞
+## 🎮 How to Use
 
-* [![TEAM EVA-MARIA](https://img.shields.io/static/v1?label=TEAM&message=EVA-MARIA&color=yellow)](https://t.me/TeamEvamaria)
+### Navigation Controls
+- **Mouse Wheel**: Scroll up/down to navigate between videos
+- **Touch Gestures**: Swipe up/down on mobile devices
+- **Keyboard Shortcuts**:
+  - `↑/↓ Arrow Keys`: Navigate between videos
+  - `Spacebar`: Play/pause current video
+  - `L`: Like current video
+  - `M`: Mute/unmute current video
 
-* [![BASE REPO](https://img.shields.io/static/v1?label=BASE&message=REPO&color=green)](https://t.me/TeamEvamaria)
+### Video Interactions
+- **Click Video**: Play/pause toggle
+- **Click Progress Bar**: Seek to specific time
+- **Like Button**: Toggle like with animation
+- **Share Button**: Share video (native sharing or copy link)
+- **Bookmark**: Save video for later
+- **Comments**: View simulated comments
 
+### Mobile Experience
+- **Touch Navigation**: Swipe up/down for video navigation
+- **Responsive Layout**: Optimized interface for mobile screens
+- **Touch-friendly Buttons**: Larger touch targets for better usability
 
-## Disclaimer
-[![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 2.0.](https://github.com/MrMKN/PROFESSOR-BOT/blob/main/LICENSE)
-Selling The Codes To Other People For Money Is *Strictly Prohibited*.
+## 🎨 Customization
+
+### Adding Your Own Videos
+Replace the sample videos in `script.js`:
+
+```javascript
+const sampleVideos = [
+    {
+        id: 1,
+        videoSrc: 'path/to/your/video.mp4',
+        userAvatar: 'path/to/avatar.jpg',
+        username: 'your_username',
+        description: 'Your video description',
+        music: 'Music name',
+        likes: '1.2K',
+        comments: '89',
+        shares: '23'
+    }
+    // Add more videos...
+];
+```
+
+### Styling Customization
+Modify colors and themes in `styles.css`:
+
+```css
+:root {
+    --primary-color: #ff0050;    /* Main accent color */
+    --background-color: #000;    /* Background color */
+    --text-color: #fff;          /* Text color */
+    --overlay-color: rgba(0, 0, 0, 0.8); /* Video overlay */
+}
+```
+
+## 🌟 Key Features Explained
+
+### Scroll-Snap Navigation
+Uses CSS `scroll-snap-type: y mandatory` for smooth, TikTok-like scrolling that snaps to each video.
+
+### Intersection Observer
+Efficiently detects which video is in view to auto-play/pause without performance issues.
+
+### Touch Gesture Support
+Comprehensive touch event handling for mobile swipe gestures with threshold detection.
+
+### Progressive Enhancement
+Works with basic functionality even if JavaScript is disabled, with enhanced features when enabled.
+
+## 🔧 Technical Implementation
+
+### Video Management
+- **Auto-play Logic**: Only one video plays at a time
+- **Performance Optimization**: Pauses off-screen videos to save resources
+- **Loading States**: Smooth loading experience with skeleton animations
+
+### Event Handling
+- **Debounced Scrolling**: Prevents rapid scroll events from causing issues
+- **Touch Event Optimization**: Efficient touch handling for mobile devices
+- **Keyboard Accessibility**: Full keyboard navigation support
+
+### State Management
+- **Video State Tracking**: Tracks current video, play state, and user interactions
+- **Like/Bookmark State**: Persistent interaction states during session
+- **Navigation State**: Active tab and section tracking
+
+## 📱 Mobile Optimization
+
+- **Responsive Breakpoints**: Optimized for screens from 320px to 1920px+
+- **Touch-First Design**: Mobile-optimized button sizes and spacing
+- **Performance**: Efficient rendering and minimal resource usage
+- **Accessibility**: Screen reader friendly with proper ARIA labels
+
+## 🎯 Future Enhancements
+
+Potential features for expansion:
+- User authentication and profiles
+- Video upload functionality
+- Real-time comments and interactions
+- Follow/unfollow system
+- Video search and filtering
+- Infinite scroll with dynamic loading
+- Video effects and filters
+- Push notifications
+
+## 🐛 Browser Compatibility
+
+| Feature | Chrome | Firefox | Safari | Edge |
+|---------|--------|---------|--------|------|
+| Video Playback | ✅ | ✅ | ✅ | ✅ |
+| Scroll Snap | ✅ | ✅ | ✅ | ✅ |
+| Intersection Observer | ✅ | ✅ | ✅ | ✅ |
+| Web Share API | ✅ | ❌ | ✅ | ✅ |
+| Backdrop Filter | ✅ | ✅ | ✅ | ✅ |
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Feel free to fork this project and submit pull requests for improvements!
+
+---
+
+**Enjoy your TikTok-like video scrolling experience! 🎉**
 

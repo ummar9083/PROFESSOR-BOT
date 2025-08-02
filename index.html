@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoScroll - Short Video Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <h1 class="logo">VideoScroll</h1>
+            </div>
+            <div class="nav-center">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search videos...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="nav-btn">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button class="nav-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Video Container -->
+            <div class="video-container" id="videoContainer">
+                <!-- Video items will be dynamically added here -->
+            </div>
+
+            <!-- Side Navigation -->
+            <div class="side-nav">
+                <button class="side-nav-btn active">
+                    <i class="fas fa-home"></i>
+                    <span>For You</span>
+                </button>
+                <button class="side-nav-btn">
+                    <i class="fas fa-users"></i>
+                    <span>Following</span>
+                </button>
+                <button class="side-nav-btn">
+                    <i class="fas fa-fire"></i>
+                    <span>Trending</span>
+                </button>
+                <button class="side-nav-btn">
+                    <i class="fas fa-music"></i>
+                    <span>Music</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Video Template -->
+        <div class="video-item-template" style="display: none;">
+            <div class="video-item">
+                <video class="video-player" muted loop>
+                    <source src="" type="video/mp4">
+                </video>
+                
+                <div class="video-overlay">
+                    <div class="video-info">
+                        <div class="user-info">
+                            <img class="user-avatar" src="" alt="User Avatar">
+                            <div class="user-details">
+                                <h3 class="username">@username</h3>
+                                <p class="video-description">Video description goes here...</p>
+                                <div class="video-music">
+                                    <i class="fas fa-music"></i>
+                                    <span>Original Sound</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-actions">
+                        <button class="action-btn like-btn">
+                            <i class="fas fa-heart"></i>
+                            <span class="action-count">1.2K</span>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <i class="fas fa-comment"></i>
+                            <span class="action-count">89</span>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <i class="fas fa-share"></i>
+                            <span class="action-count">23</span>
+                        </button>
+                        <button class="action-btn bookmark-btn">
+                            <i class="fas fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-controls">
+                    <button class="play-pause-btn">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <button class="volume-btn">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
